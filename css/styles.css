@@ -57,30 +57,39 @@ body{
     font-size: 1rem;
     font-weight: bold;
     color: #444;
+    transition: all .1s;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
 }
-@keyframes btn-red{
+.btn-counter{
+    background: rgba(255,0,32,.4);
+}
+.btn-save{
+    background: rgba(0,255,32,.4);
+}
+/* @keyframes btn-red{
     0%{
         box-shadow: none;
     }
-    100%{
-        box-shadow: 0 0 5px red;
+    50%{
+        box-shadow: 5px 5px 35px rgba(255,0,0,.4),-5px -5px 35px rgba(255,0,0,.4) ;
     }
 }
 @keyframes btn-green{
     0%{
         box-shadow: none;
     }
-    100%{
-        box-shadow: 0 0 5px green;
+    50%{
+        box-shadow: 5px 5px 35px rgba(0,255,0,.4),-5px -5px 35px rgba(0,255,0,.4) ;
     }
+} */
+.btn:hover{
+    transform: translateY(-.1rem); 
 }
-.btn:hover.btn-counter{
-    animation: btn-red .7s infinite alternate;
+.btn:active{
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+    transform: translate(0);
 }
 
-.btn:hover.btn-save{
-    animation: btn-green .7s infinite alternate;
-}
 h6{
     margin: 2rem 0 0 0;
     font-size: 1.2rem;
@@ -97,3 +106,4 @@ h6{
         font-size: 18px;
     }    
 }
+
