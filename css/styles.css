@@ -1,0 +1,94 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right bottom, rgba(255,0,0,.2), rgba(0,0,0,.2)) ,url("../images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #333;
+}
+
+.container{
+    /* -webkit-backdrop-filter: blur(55%); */
+    background: rgba(255,2550,255,.1);
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    box-shadow:  0 0 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.2);
+    text-align: center;  
+    border-radius: 5px;  
+    min-width: 50%;
+    max-width: 75%;
+}
+.container h2{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #fcddaf;
+    text-shadow: 1px 1px rgba(0,0,0,.4);
+    
+}
+.container h3{
+    font-size: .9rem;
+    text-align: left;
+    margin-top: 1rem;   
+}
+.btn{
+    outline: 0;
+    border: 0;
+    background: rgba(255,255,255,.4);
+    padding: 5px 20px;
+    border-radius: 3px;
+    backdrop-filter: blur(2px);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #444;
+}
+@keyframes btn-red{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0 0 5px red;
+    }
+}
+@keyframes btn-green{
+    0%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0 0 5px green;
+    }
+}
+.btn:hover.btn-counter{
+    animation: btn-red .7s infinite alternate;
+}
+
+.btn:hover.btn-save{
+    animation: btn-green .7s infinite alternate;
+}
+
+@media(max-width: 300px){
+    
+    .btn-save{
+        margin-top: 1rem;
+    }    
+}
+@media(max-width: 339px){
+    .container h2{
+        width: 100%;
+        font-size: 18px;
+    }    
+}
