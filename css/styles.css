@@ -22,7 +22,7 @@ body{
 
 .container{
     /* -webkit-backdrop-filter: blur(55%); */
-    background: rgba(255,2550,255,.1);
+    background: rgba(255,2550,255,.3);
     backdrop-filter: blur(3px);
     padding: 30px;
     box-shadow:  0 0 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.2);
@@ -30,29 +30,31 @@ body{
     border-radius: 5px;  
     min-width: 50%;
     max-width: 75%;
+    padding: 100px 30px;
 }
 .container h2{
-    margin: 1rem 0;
-    font-size: 1.4rem;
+    margin: 0 0 2rem 0;
+    font-size: 2.4rem;
     color: #fcddaf;
     text-shadow: 1px 1px rgba(0,0,0,.4);
     
 }
 .container h3{
-    font-size: .9rem;
+    font-size: 1.4rem;
     text-align: left;
-    margin-top: 1rem;   
+    margin-top: 2rem;   
 }
 .btn{
     outline: 0;
     border: 0;
     background: rgba(255,255,255,.4);
-    padding: 5px 20px;
+    padding: 10px 30px;
+    margin-right: 10px;
     border-radius: 3px;
     backdrop-filter: blur(2px);
     text-transform: uppercase;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #444;
 }
@@ -79,7 +81,10 @@ body{
 .btn:hover.btn-save{
     animation: btn-green .7s infinite alternate;
 }
-
+h6{
+    margin: 2rem 0 0 0;
+    font-size: 1.2rem;
+}
 @media(max-width: 300px){
     
     .btn-save{
